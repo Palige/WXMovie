@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/movie/movie",
+    "pages/profile/profile",
+    "pages/comment/comment"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#E54847",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+
+  "usingComponents": {   
+  "van-button": "vant-weapp/button",
+  "van-field": "vant-weapp/field",
+  "van-rate": "vant-weapp/rate"
+},
+
+
+
+
+"tabBar":{
+  "color":"#000",
+  "selectedColor": "#E54847",
+"list":[{
+"pagePath":"pages/movie/movie",
+"text":"电影",
+"iconPath":"images/icon/movie.png",
+"selectedIconPath":"images/icon/movie-active.png"
+},
+  {
+    "pagePath": "pages/profile/profile",
+    "text": "我的",
+    "iconPath": "images/icon/profile.png",
+    "selectedIconPath": "images/icon/profile-active.png"
+  }
+]}
+}
+

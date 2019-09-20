@@ -1,0 +1,5 @@
+<!--pages/profile/profile.wxml-->
+<view class="profile">
+<open-data class="profile-img" type="userAvatarUrl"></open-data>
+<open-data type="userNickName" open-gid="xxxxxx"></open-data>
+</view>

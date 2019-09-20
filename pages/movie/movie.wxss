@@ -1,0 +1,40 @@
+.movie{
+height:300rpx;
+display: flex;
+padding: 10px;
+border-bottom: 1px solid #ccc;
+font-family: 'FangSong';
+
+}
+.movie-info>view{
+padding: 2px 0;
+
+}
+
+.movie-img{
+  width: 200rpx;
+  height: 100%;
+  margin-right: 20rpx;
+}
+
+.movie-title{
+color: #666;
+font-size: 40rpx;
+font-weight: bold;
+
+}
+.movie-info{
+  flex: 1;
+}
+
+.movie-score{
+color:#F6791D;
+}
+
+.movie-comment{
+  height: 60rpx;
+  background: #E54847;
+  color: #fff;
+  font-size: 26rpx;
+margin-top: 120rpx;
+}

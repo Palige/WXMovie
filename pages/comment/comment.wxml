@@ -1,0 +1,36 @@
+<!--pages/comment/comment.wxml-->
+<view>
+<view class="detail-container" style="background:url({{detail.images.large}}) no-repeat top/cover"></view>
+<view class='detail-mask'></view>
+<view class='detail-info'>
+<image src="{{detail.images.large}}" class="detail-img"></image>
+<view class='detail'>
+<view class='detail-nm'>{{detail.title}}</view>
+<view>{{detail.original_title}}</view>
+<view class='detail-sc'>{{detail.rating.average}}分</view>
+<view>{{detail.countries[0]}}/{{detail.durations[0]}}</view>
+<view>导演：{{detail.directors[0].name}}</view>
+</view>
+</view>
+
+<view  class='desc'>{{detail.summary}}</view>
+
+<!--输入框-->
+<van-cell-group>
+  <van-field
+    value="{{ content }}"
+    placeholder="发表评论..."
+    border="{{ false }}"
+    bind:change="onCommentChange"
+  />
+</van-cell-group>
+<!--评分-->
+<van-rate value="{{ score }}" bind:change="onScorehange"/>
+
+<van-button bindtap="uploadImg" type="warning">上传图片</van-button>
+<view>
+<image class="uploadImg" src="{{item}}" wx:for="{{images}}"></image>
+</view>
+<van-button bindtap="submit" size="large" type="danger">提交</van-button>
+
+</view>
